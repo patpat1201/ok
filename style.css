@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+}
+
+.content {
+  width: 100%;
+  min-height: calc(100vh - 80px); /* Adjust this value as needed */
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.header .change li a:hover,
+.change .ti-bag:hover,
+.change .ti-search:hover {
+  color: darkgreen;
+}
+
+.change li a {
+  text-decoration: none;
+  color: beige;
+}
+
+.csssearch {
+  width: 100%;
+  max-width: 250px;
+  height: 30px;
+  display: none;
+  margin-top: 10px;
+}
+
+.cssclick {
+  width: 75px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
+  cursor: pointer;
+}
+
+.phanloaisanpham {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-top: 20px;
+  float: none;
+}
+
+.sanpham {
+  width: 100%;
+  max-width: 990px;
+  background-color: whitesmoke;
+  margin-top: 20px;
+  float: right; /* Thay đổi từ 'left' sang 'right' */
+  overflow: hidden;
+}
+
+.iconchange {
+  cursor: pointer;
+}
+
+.iconchange i:hover {
+  color: darkgreen;
+}
+
+.sanpham .boxsanpham {
+  width: 100%;
+  max-width: 250px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  margin-top: 20px;
+  color: whitesmoke;
+}
+
+.footer .cssfooter:hover,
+.footer .cssfootercontent p:hover {
+  color: darkgreen;
+  cursor: pointer;
+}
+
+.card {
+  width: 18rem;
+  position: absolute;
+  top: 155px;
+  left: 30px;
+  transition: opacity 0.3s ease-in-out; /* Thêm hiệu ứng mờ dần */
+  opacity: 1; /* Giữ hiển thị ban đầu */
+}
+
+@media (max-width: 768px) {
+  .card {
+      opacity: 0; /* Khi màn hình nhỏ hơn 768px, ẩn phần "Phân loại sản phẩm" */
+      pointer-events: none; /* Không cho phép tương tác */
+      position: static; /* Sửa vị trí */
+  }
+}
+/* CSS cho hình ảnh sản phẩm */
+.product-image {
+    width: 250px;
+    height: 300px;
+  }
+
+  #suggestionsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
+  
+  #suggestionsList li {
+    display: none;
+    flex-basis: calc(30% - 100px);
+    margin-bottom: 50px;
+    margin-right: 100px;
+  }
+  
+  #suggestionsList li:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+  #suggestionsList li.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #suggestionsList li.visible img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  
+  #suggestionsList li.visible .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #suggestionsList li.visible .product-info .product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #suggestionsList li.visible .product-info .product-price {
+    color: gray;
+  }
+
+  .add-to-cart {
+    background-color: whitesmoke;
+    color: red;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: red solid 2px;
+    border-radius: 10px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: rgb(219, 207, 207);
+  }
+  
+  .add-to-cart:active {
+    background-color: rgb(216, 28, 14);
+  }
+
+
+
+

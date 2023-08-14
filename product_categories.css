@@ -1,0 +1,52 @@
+/* CSS for product items */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    margin: 30px;
+}
+
+/* CSS for product images */
+.product-item img {
+    display: block;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+/* CSS for product names */
+.product-name {
+    font-weight: bold;
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Add some space between image and text */
+}
+
+/* CSS for product prices */
+.product-price {
+    color: #777;
+    text-align: center; /* Center text */
+    margin-top: 5px; /* Add some space between name and price */
+}
+
+/* CSS for add-to-cart buttons */
+.add-to-cart {
+    background-color: whitesmoke;
+    color: red;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: red solid 2px;
+    border-radius: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(219, 207, 207);
+  }
+  
+  .add-to-cart:active {
+    background-color: rgb(216, 28, 14);
+  }

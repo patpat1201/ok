@@ -1,0 +1,12 @@
+/* CSS cho modal-body */
+.modal-body {
+    max-height: 200px; /* Giới hạn chiều cao của modal-body */
+    overflow-y: auto; /* Tạo thanh cuộn khi nội dung dài hơn */
+  }
+
+  
+  /* CSS cho mô tả sản phẩm */
+  #productDescription_modaltetail {
+    word-break: break-word; /* Tự động xuống hàng khi vượt quá chiều ngang của modal */
+    display: inline-block;
+  }

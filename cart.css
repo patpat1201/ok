@@ -1,0 +1,9 @@
+/* CSS để căn giữa nội dung trong ô */
+.center-text {
+    line-height: 6;
+  }
+
+/* CSS để căn giữa nút trong ô */
+.align-middle {
+    vertical-align: middle;
+}
